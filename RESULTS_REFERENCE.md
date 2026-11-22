@@ -11,16 +11,16 @@ Reference results from the validation run on the system shown in each section (r
 ## smoke
 
 - **System:** 1× AMD Instinct MI300X VF (196288 MB) · INTEL(R) XEON(R) PLATINUM 8568Y+ · Ubuntu 24.04.5 LTS · kernel 6.8.0-149-generic · driver 7.1.9.31600000
-- **Run:** 2026-11-22T11:18:08Z · status **PASS** (exit 0)
-- **Time (mm:ss):** setup 01:56 · benchmark 00:03 · whole run 02:15
-- **Source:** run 122_20261122_111808
+- **Run:** 2026-11-22T14:54:04Z · status **PASS** (exit 0)
+- **Time (mm:ss):** setup 01:39 · benchmark 00:04 · whole run 01:58
+- **Source:** run 122_20261122_145404
 - **Command:** `bash run_benchmark.sh --smoke --device-id 0 --dtype bf16 --image-size 64 --batch-size 1,2 --warmup-iters 1 --num-iterations 3 --use-channels-last true`
 
 | # | Metric | Result |
 |---|---|---|
-| 1 | Largest-batch inference throughput, images/s (images_sec) | 394.6781360898075 |
-| 2 | Largest-batch per-image latency, ms (per_image_latency_ms) | 2.533710151535868 |
-| 3 | Largest-batch latency max, ms (batch_latency_max_msec) | 5.839084000399453 |
+| 1 | Largest-batch inference throughput, images/s (images_sec) | 412.88812869616186 |
+| 2 | Largest-batch per-image latency, ms (per_image_latency_ms) | 2.4219635550139174 |
+| 3 | Largest-batch latency max, ms (batch_latency_max_msec) | 5.418038999778219 |
 | 4 | Largest-batch GPU utilization (gpu_util_percent) | 86.2 |
 | 5 | Peak GPU memory at largest batch, GB (peak_gpu_memory_GB) | 0.144786432 |
 <!-- /profile:smoke -->
